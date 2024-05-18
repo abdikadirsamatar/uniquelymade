@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - uniquely made</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff; /* Changed text color to white for better contrast */
+      line-height: 1.6;
+      background-color: #000; /* Set background color to black */
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1em 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 1em;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #gallery-page {
+      padding: 2em 0;
+      text-align: center;
+    }
+
+    #gallery-page h2 {
+      margin-bottom: 1em;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Set grid to have 3 columns */
+      grid-gap: 1em;
+    }
+
+    .gallery-images figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; /* Added transition */
+      position: relative; /* Added position */
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease; /* Added transition */
+    }
+
+    .top-description,
+    .bottom-description {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0.5em;
+      color: #000; /* Text color for description */
+    }
+
+    .top-description {
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.7); /* Light background */
+    }
+
+    .bottom-description {
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.7); /* Light background */
+    }
+
+    .gallery-images figure:hover {
+      transform: scale(1.1); /* Scale up on hover */
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    footer .social-media a {
+      color: #fff;
+      margin: 0 0.5em;
+      text-decoration: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>uniquely made</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="gallery-page">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-images">
+        <figure>
+          <img src="/images/1.jpg" alt="Gallery Image 1">
+          <div class="bottom-description">Acid Wash Oversize Long Sleeve T-Shirt $40</div>
+        </figure>
+        <figure>
+          <img src="/images/2.jpg" alt="Gallery Image 2">
+          <div class="bottom-description">THE BACK</div>
+        </figure>
+        <figure>
+          <img src="/images/4.jpg" alt="Gallery Image 3">
+          <div class="bottom-description">Vintage Wash Frayed Fleece Hoodie $60</div>
+        </figure>
+        <figure>
+          <img src="/images/3.jpg" alt="Gallery Image 4">
+          <div class="bottom-description">THE BACK</div>
+        </figure>
+        <figure>
+          <img src="/images/6.jpg" alt="Gallery Image 5">
+          <div class="bottom-description">Vintage Wash Frayed T-Shirt $35</div>
+        </figure>
+        <figure>
+          <img src="/images/5.jpg" alt="Gallery Image 6">
+          <div class="bottom-description">THE BACK</div>
+        </figure>
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 uniquely made. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://www.snapchat.com/add/retrosclub13?">snapchat</a>
+        <a href="https://www.instagram.com/deerwould?igsh=cTQ4d2JsN3J0bHdr&utm_source=qr">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
